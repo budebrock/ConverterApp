@@ -10,6 +10,8 @@ import android.view.View;
 public class Energy extends AppCompatActivity {
 
     double Joule, Kilojoule, GramCalorie, Kilocalorie, WattHour, Electronvolt, BritishThermalUnit, USTherm, FootPound;
+    int UserSelection;
+    String UserDropdown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,4 +42,38 @@ public class Energy extends AppCompatActivity {
 
     }
 
+    /* selection codes:
+    Joule = 1
+    Kilojoule = 2
+    GramCalorie = 3
+    Kilocalorie = 4
+    WattHour = 5
+    Electronvolt = 6
+    BritishThermalUnit = 7
+    USTherm = 8
+    FootPound = 9
+     */
+    public void onGo() {
+        if (UserDropdown == "Joules")
+            UserSelection = 1;
+        else if (UserDropdown == "Kilojoules")
+            UserSelection = 2;
+        else if (UserDropdown == "GramCalorie")
+            UserSelection = 3;
+        else if (UserDropdown == "Kilocalorie")
+            UserSelection = 4;
+        else if (UserDropdown == "WattHour")
+            UserSelection = 5;
+        else if (UserDropdown == "Electronvolt")
+            UserSelection = 6;
+        else if (UserDropdown == "BritishThermalUnit")
+            UserSelection = 7;
+        else if (UserDropdown == "USTherm")
+            UserSelection = 8;
+        else if (UserDropdown == "FootPound")
+            UserSelection = 9;
+        else
+            System.out.print("Error");
+//start here: have to add the switch statement for each userdropdown
+    }
 }

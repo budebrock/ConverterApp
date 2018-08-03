@@ -656,16 +656,20 @@ public class DigitalStorage extends AppCompatActivity {
                 Kibibits = UserEntry * KibibitMultiplierForPebibytes;
                     long MegabitMultiplierForPebibytes = 9007000000L;
                 Megabits = UserEntry * MegabitMultiplierForPebibytes;
-                Mebibits = UserEntry * 8590000000;
+                    long MebibitMultiplierForPebibytes = 8590000000L;
+                Mebibits = UserEntry * MebibitMultiplierForPebibytes;
                 Gigabits = UserEntry * 9007000;
                 Gibibits = UserEntry * 8389000;
                 Terabits = UserEntry * 9007.2;
                 Tebibits = UserEntry * 8192;
                 Petabits = UserEntry * 9.0072;
                 Pebibits = UserEntry * 8;
-                Bytes = UserEntry * 1126000000000000;
-                Kilobytes = UserEntry * 1126000000000;
-                Kibibytes = UserEntry * 1100000000000;
+                    long ByteMultiplierForPebibytes = 1126000000000000L;
+                Bytes = UserEntry * ByteMultiplierForPebibytes;
+                    long KilobyteMultiplierForPebibytes = 1126000000000L;
+                Kilobytes = UserEntry * KilobyteMultiplierForPebibytes;
+                    long KibibyteMultiplierForPebibytes = 1100000000000L;
+                Kibibytes = UserEntry * KibibyteMultiplierForPebibytes;
                 Megabytes = UserEntry * 1126000000;
                 Mebibytes = UserEntry * 1074000000;
                 Gigabytes = UserEntry * 1126000;
@@ -674,6 +678,8 @@ public class DigitalStorage extends AppCompatActivity {
                 Tebibytes = UserEntry * 1024;
                 Petabytes = UserEntry * 1.1259;
                 Pebibytes = UserEntry * 1;
+                //test test
+
         }
     }
 }
