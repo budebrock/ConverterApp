@@ -650,9 +650,12 @@ public class DigitalStorage extends AppCompatActivity {
             case 22: UserDropdown = "Pebibytes";
                     long BitMultiplierForPebibytes = 9007000000000000L;
                 Bits = UserEntry * BitMultiplierForPebibytes;
-                Kilobits = UserEntry * 9007000000000;
-                Kibibits = UserEntry * 8796000000000;
-                Megabits = UserEntry * 9007000000;
+                    long KilobitMultiplierForPebibytes = 9007000000000L;
+                Kilobits = UserEntry * KilobitMultiplierForPebibytes;
+                    long KibibitMultiplierForPebibytes = 8796000000000L;
+                Kibibits = UserEntry * KibibitMultiplierForPebibytes;
+                    long MegabitMultiplierForPebibytes = 9007000000L;
+                Megabits = UserEntry * MegabitMultiplierForPebibytes;
                 Mebibits = UserEntry * 8590000000;
                 Gigabits = UserEntry * 9007000;
                 Gibibits = UserEntry * 8389000;
